@@ -18,7 +18,7 @@ The script takes the following arguments:
 3. END DATE: end date of the query (*Note: must be no more than 30 days after the START DATE)
 4. OUTPUT FILE NAME/PATH: where you want the data to be saved
 5. [optional] SEARCH ID: field associated with the API for if you are continuing a search; you must look into the data you already have to figure out what the value should be
-6. [optional] CURSOR: same as in (5)
+6. [optional] CURSOR: same as in (5); to pick up where you left off, look for the final cursor returned
 
 ## Things to note 
 * Access tokens are good for 2 hours, but the script is set up to generate a new one every hour. In my experience so far, rate limits run out far before an hour is up.
@@ -30,7 +30,7 @@ Here's what it would look like to _start_ a search for all videos with #TikTok b
 <br>
 `python3 tiktok-video-data.py tiktok 20221012 20221020 /tiktok-data/#tiktok.json`
 
-Now, let's say we want to continue that search. We would look in `/tiktok-data/#tiktok.json` and find that the `SEARCH_ID` = 12345 and the `CURSOR` = 500. Then, we would run:
+Now, let's say we want to continue that search. We would look in `/tiktok-data/#tiktok.json` and find that the `SEARCH_ID` = 12345 and the final `CURSOR` = 500. Then, we would run:
 <br>
 `python3 tiktok-video-data.py tiktok 20221012 20221020 /tiktok-data/#tiktok.json 12345 500`
 
