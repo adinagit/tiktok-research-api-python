@@ -25,9 +25,11 @@ The script takes the following arguments:
 
 ## Example
 Here's what it would look like to _start_ a search for all videos with #TikTok between 10/12/2022 and 10/20/2022 and save it to `/tiktok-data/#tiktok.json`: 
+<br>
 `python3 tiktoko-video-data.py tiktok 20221012 20221020 /tiktok-data/#tiktok.json`
 
-Now, let's say we want to continue that search. We would look in `/tiktok-data/#tiktok.json` and find that the `SEARCH_ID` = 12345 and the `CURSOR` = 500. Then, we would run: 
+Now, let's say we want to continue that search. We would look in `/tiktok-data/#tiktok.json` and find that the `SEARCH_ID` = 12345 and the `CURSOR` = 500. Then, we would run:
+<br>
 `python3 tiktoko-video-data.py tiktok 20221012 20221020 /tiktok-data/#tiktok.json 12345 500`
 
 # Querying User Data
