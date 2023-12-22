@@ -96,7 +96,7 @@ MAKE UP TO A TOTAL OF 1000 REQUESTS
 """
 
 i = 0
-if not D.json()['data']['has_more']: # if no more date, cut to end of script
+if not D.json()['data']['has_more']: # if no more data, cut to end of script
     i == 1000
 
 while i < 999:
