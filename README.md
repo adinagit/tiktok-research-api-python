@@ -17,8 +17,8 @@ The script takes the following arguments:
 2. START DATE: start date of the query
 3. END DATE: end date of the query (*Note: must be no more than 30 days after the START DATE)
 4. OUTPUT FILE NAME/PATH: where you want the data to be saved
-5. [OPTIONAL- FOR CONTINUING A SEARCH] SEARCH ID: field associated with the API for if you are continuing a search; you must look into the data you already have to figure out what the value should be
-6. [OPTIONAL - FOR CONTINUING A SEARCH] CURSOR: same as in (5)
+5. [optional] SEARCH ID: field associated with the API for if you are continuing a search; you must look into the data you already have to figure out what the value should be
+6. [optional] CURSOR: same as in (5)
 
 ## Things to note 
 * Access tokens are good for 2 hours, but the script is set up to generate a new one every hour. In my experience so far, rate limits run out far before an hour is up.
