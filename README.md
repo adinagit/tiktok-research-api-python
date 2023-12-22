@@ -1,7 +1,7 @@
 # tiktok-research-api-python
-A simple Python wrapper for querying video & user data with TikTok's research API.
+A simple Python wrapper for querying video & user data with [TikTok's Research API](https://developers.tiktok.com/products/research-api/).
 
-To use this code, you must first apply for and receive access to [TikTok's Research API](https://developers.tiktok.com/products/research-api/). 
+To use this code, you must first apply for and receive access to the Research API. 
 
 # Querying Video Data
 Script: `tiktok-video-data.py`
