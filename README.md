@@ -5,6 +5,7 @@ To use this code, you must first apply for and receive access to the Research AP
 
 # Querying Video Data
 **For more general info, consult [TikTok's Research API Reference for querying videos](https://developers.tiktok.com/doc/research-api-specs-query-videos/).**
+
 Script: `tiktok-video-hash-data.py`
 
 This script is set up to query all videos with a given hashtag and write the data to a file in JSON format. The data includes all fields offered by TikTok.
@@ -37,6 +38,7 @@ Now, let's say we want to continue that search. We would look in `/tiktok-data/#
 
 # Querying User Data
 **For more general info, consult [TikTok's Research API Reference for querying users](https://developers.tiktok.com/doc/research-api-specs-query-user-info/).**
+
 ## Version 1: Search for List of Users
 Script: `tiktok-user-list-data.py`
 
