@@ -9,7 +9,7 @@ GET PARAMETERS
 (1) hashtag
 (2) start date
 (3) end date
-(4) output file
+(4) output file (.json)
 (5) [optional] search id
 (6) [optional] cursor
 """
