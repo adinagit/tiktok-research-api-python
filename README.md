@@ -52,7 +52,7 @@ The script takes the following arguments:
 
 ### Things to note 
 * If a query fails for some reason, the script will keep running.
-* The API rate limit is 1000 user requests/day, so the script will stop running after 1000 queries even if the input list has >1000 usernames. If the input list has <=1000 usernames, the script will stop running after querying the full list. 
+* The API rate limit is 1000 user requests/day, so the script will stop running after 1000 queries even if the input list has >1000 usernames. In that case, it will print the username where the search left off. If the input list has <=1000 usernames, the script will stop running after querying the full list. 
 
 ### Example 
 Here's what it would look like to search for users stored in `user-list.txt` and save it to `/tiktok-data/users.json`: 
