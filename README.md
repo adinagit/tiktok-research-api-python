@@ -38,7 +38,7 @@ Now, let's say we want to continue that search. We would look in `/tiktok-data/#
 ## Version 1: Search for List of Users
 Script: `tiktok-user-list-data.py`
 
-This script is set up to query user data from a list of usernames stored in a separate `.txt` file and write the output data to a file in JSON format. The data includes all fields offered by TikTok.
+This script is set up to query user data from a list of usernames stored in a separate `.txt` file and write the output to a file in JSON format. The data includes all fields offered by TikTok.
 
 More details on querying user data can be found in [TikTok's API Reference for querying users](https://developers.tiktok.com/doc/research-api-specs-query-user-info/).
 
@@ -53,9 +53,24 @@ The script takes the following arguments:
 * The API rate limit is 1000 user requests/day, so the script will stop running after 1000 queries even if the input list has >1000 usernames. If the input list has <=1000 usernames, the script will stop running after querying the full list. 
 
 ### Example 
-Here's what it would look like to search for users stored in `user-list.txt` and save it tok `/tiktok-data/users.json`: 
+Here's what it would look like to search for users stored in `user-list.txt` and save it to `/tiktok-data/users.json`: 
 <br>
 `python3 tiktok-user-list-data.py user-list.txt /tiktok-data/users.json`
 
 ## Version 2: Search for Single User
-Coming soon!
+Script: `tiktok-user-data.py`
+
+This script is set up to query user data for a singular user and write the output to a file in JSON format. The data includes all fields offered by TikTok.
+
+More details on querying user data can be found in [TikTok's API Reference for querying users](https://developers.tiktok.com/doc/research-api-specs-query-user-info/).
+
+For the script to run, you must insert your **CLIENT KEY** and **CLIENT SECRET** in the `get_access_token` function on lines `20` and  `21` respectively. 
+
+The script takes the following arguments: 
+1. USERNAME: the username to search for (*Note: I'm not sure if usernames can include spaces.. if that's the case, this script probably needs to be tweaked!)
+2. OUTPUT FILE: where you want the data to be saved (should be a .json file)
+
+### Example 
+Here's what it would look like to search for data on `tiktok-user-1` and save it to `/tiktok-data/users.json`: 
+<br>
+`python3 tiktok-user-data.py tiktok-user-1 /tiktok-data/users.json`
