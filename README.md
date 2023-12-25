@@ -35,4 +35,25 @@ Now, let's say we want to continue that search. We would look in `/tiktok-data/#
 `python3 tiktok-video-hash-data.py tiktok 20221012 20221020 /tiktok-data/#tiktok.json 12345 500`
 
 # Querying User Data
-Coming soon! <3
+## Version 1: Search for List of Users
+Script: `tiktok-user-list-data.py`
+
+This script is set up to query user data from a list of usernames stored in a separate `.txt` file and write the output data to a file in JSON format. The data includes all fields offered by TikTok.
+
+For the script to run, you must insert your **CLIENT KEY** and **CLIENT SECRET** in the `get_access_token` function on lines `27` and  `28` respectively. 
+
+The script takes the following arguments: 
+1. INPUT USER LIST: path to the `.txt` file with the list of usernames to search for, written on separate lines. You can find a toy example in `user-list-example.txt`
+2. OUTPUT FILE: where you want the data to be saved (should be a .json file)
+
+### Things to note 
+* If a query fails for some reason (e.g., the username is invalid), the script will keep running and print out the username that failed.
+* The API rate limit is 1000 user requests/day, so the script will stop running after 1000 queries even if the input list has >1000 usernames. If the input list has <=1000 usernames, the script will stop running after querying the full list. 
+
+### Example 
+Here's what it would look like to search for users stored in `user-list.txt` and save it tok `/tiktok-data/users.json`: 
+<br>
+`python3 tiktok-user-list-data.py user-list.txt /tiktok-data/users.json`
+
+## Version 2: Search for Single User
+Coming soon!
