@@ -16,7 +16,7 @@ The script takes the following arguments:
 1. HASHTAG: the hashtag you want to search for
 2. START DATE: start date of the query
 3. END DATE: end date of the query (*Note: must be no more than 30 days after the START DATE)
-4. OUTPUT FILE NAME/PATH: where you want the data to be saved
+4. OUTPUT FILE NAME/PATH: where you want the data to be saved (should be a .json file)
 5. [optional] SEARCH ID: field associated with the API for if you are continuing a search; you must look into the data you already have to figure out what the value should be
 6. [optional] CURSOR: same as in (5); to pick up where you left off, look for the final cursor returned
 
