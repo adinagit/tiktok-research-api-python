@@ -40,6 +40,8 @@ Script: `tiktok-user-list-data.py`
 
 This script is set up to query user data from a list of usernames stored in a separate `.txt` file and write the output data to a file in JSON format. The data includes all fields offered by TikTok.
 
+More details on querying user data can be found in [TikTok's API Reference for querying users](https://developers.tiktok.com/doc/research-api-specs-query-user-info/).
+
 For the script to run, you must insert your **CLIENT KEY** and **CLIENT SECRET** in the `get_access_token` function on lines `27` and  `28` respectively. 
 
 The script takes the following arguments: 
