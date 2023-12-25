@@ -49,7 +49,7 @@ The script takes the following arguments:
 2. OUTPUT FILE: where you want the data to be saved (should be a .json file)
 
 ### Things to note 
-* If a query fails for some reason (e.g., the username is invalid), the script will keep running and print out the username that failed.
+* If a query fails for some reason, the script will keep running.
 * The API rate limit is 1000 user requests/day, so the script will stop running after 1000 queries even if the input list has >1000 usernames. If the input list has <=1000 usernames, the script will stop running after querying the full list. 
 
 ### Example 
