@@ -4,7 +4,7 @@ A simple Python wrapper for querying video & user data with [TikTok's Research A
 To use this code, you must first apply for and receive access to the Research API. 
 
 # Querying Video Data
-Script: `tiktok-video-data.py`
+Script: `tiktok-video-hash-data.py`
 
 This script is set up to query all videos with a given hashtag and write the data to a file in JSON format. The data includes all fields offered by TikTok.
 
@@ -28,11 +28,11 @@ The script takes the following arguments:
 ## Example
 Here's what it would look like to _start_ a search for all videos with #TikTok between 10/12/2022 and 10/20/2022, and save it to `/tiktok-data/#tiktok.json`: 
 <br>
-`python3 tiktok-video-data.py tiktok 20221012 20221020 /tiktok-data/#tiktok.json`
+`python3 tiktok-video-hash-data.py tiktok 20221012 20221020 /tiktok-data/#tiktok.json`
 
 Now, let's say we want to continue that search. We would look in `/tiktok-data/#tiktok.json` and find that the `SEARCH_ID` = 12345 and the final `CURSOR` = 500. Then, we would run:
 <br>
-`python3 tiktok-video-data.py tiktok 20221012 20221020 /tiktok-data/#tiktok.json 12345 500`
+`python3 tiktok-video-hash-data.py tiktok 20221012 20221020 /tiktok-data/#tiktok.json 12345 500`
 
 # Querying User Data
 Coming soon! <3
