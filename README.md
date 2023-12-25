@@ -18,7 +18,7 @@ The script takes the following arguments:
 1. HASHTAG: the hashtag you want to search for
 2. START DATE: start date of the query
 3. END DATE: end date of the query (*Note: must be no more than 30 days after the START DATE)
-4. OUTPUT FILE NAME/PATH: where you want the data to be saved (should be a .json file)
+4. OUTPUT FILE NAME/PATH: where you want the data to be saved (should be a `.json` file)
 5. [optional] SEARCH ID: field associated with the API for if you are continuing a search; you must look into the data you already have to figure out what the value should be
 6. [optional] CURSOR: same as in (5); to pick up where you left off, look for the final cursor returned
 
@@ -48,7 +48,7 @@ For the script to run, you must insert your **CLIENT KEY** and **CLIENT SECRET**
 
 The script takes the following arguments: 
 1. INPUT USER LIST: path to the `.txt` file with the list of usernames to search for, written on separate lines. You can find a toy example in `user-list-example.txt`
-2. OUTPUT FILE: where you want the data to be saved (should be a .json file)
+2. OUTPUT FILE: where you want the data to be saved (should be a `.json` file)
 
 ### Things to note 
 * If a query fails for some reason, the script will keep running.
