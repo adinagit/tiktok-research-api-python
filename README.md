@@ -4,11 +4,12 @@ A simple Python wrapper for querying video & user data with [TikTok's Research A
 To use this code, you must first apply for and receive access to the Research API. 
 
 # Querying Video Data
+**For more general info, consult [TikTok's Research API Reference for querying videos](https://developers.tiktok.com/doc/research-api-specs-query-videos/).**
 Script: `tiktok-video-hash-data.py`
 
 This script is set up to query all videos with a given hashtag and write the data to a file in JSON format. The data includes all fields offered by TikTok.
 
-It is easy to change/customize the query itself on `line 57`; to do so, consult [TikTok's API Reference for querying videos](https://developers.tiktok.com/doc/research-api-specs-query-videos/).
+It is easy to change/customize the query itself on `line 57`.
 
 For the script to run, you must insert your **CLIENT KEY** and **CLIENT SECRET** in the `get_access_token` function on lines `29` and  `30` respectively. 
 
@@ -35,12 +36,11 @@ Now, let's say we want to continue that search. We would look in `/tiktok-data/#
 `python3 tiktok-video-hash-data.py tiktok 20221012 20221020 /tiktok-data/#tiktok.json 12345 500`
 
 # Querying User Data
+**For more general info, consult [TikTok's Research API Reference for querying users](https://developers.tiktok.com/doc/research-api-specs-query-user-info/).**
 ## Version 1: Search for List of Users
 Script: `tiktok-user-list-data.py`
 
 This script is set up to query user data from a list of usernames stored in a separate `.txt` file and write the output to a file in JSON format. The data includes all fields offered by TikTok.
-
-More details on querying user data can be found in [TikTok's API Reference for querying users](https://developers.tiktok.com/doc/research-api-specs-query-user-info/).
 
 For the script to run, you must insert your **CLIENT KEY** and **CLIENT SECRET** in the `get_access_token` function on lines `27` and  `28` respectively. 
 
@@ -61,8 +61,6 @@ Here's what it would look like to search for users stored in `user-list.txt` and
 Script: `tiktok-user-data.py`
 
 This script is set up to query user data for a singular user and write the output to a file in JSON format. The data includes all fields offered by TikTok.
-
-More details on querying user data can be found in [TikTok's API Reference for querying users](https://developers.tiktok.com/doc/research-api-specs-query-user-info/).
 
 For the script to run, you must insert your **CLIENT KEY** and **CLIENT SECRET** in the `get_access_token` function on lines `20` and  `21` respectively. 
 
