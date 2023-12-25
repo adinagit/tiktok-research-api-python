@@ -68,7 +68,7 @@ For the script to run, you must insert your **CLIENT KEY** and **CLIENT SECRET**
 
 The script takes the following arguments: 
 1. USERNAME: the username to search for (*Note: I'm not sure if usernames can include spaces.. if that's the case, this script probably needs to be tweaked!)
-2. OUTPUT FILE: where you want the data to be saved (should be a .json file)
+2. OUTPUT FILE: where you want the data to be saved (should be a `.json` file)
 
 ### Example 
 Here's what it would look like to search for data on `tiktok-user-1` and save it to `/tiktok-data/users.json`: 
